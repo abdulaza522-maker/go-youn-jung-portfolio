@@ -37,15 +37,16 @@ export default function Hero({ scrollY }) {
           </motion.div>
 
           {/* Main Heading */}
-          <motion.div variants={itemVariants} className="space-y-2">
-            <div className="text-5xl sm:text-6xl lg:text-7xl font-bold font-display leading-[0.9] tracking-tighter">
-              <div className="text-white">DIGITAL</div>
-              <div className="flex items-baseline gap-2">
-                <span className="text-stroke">EXPERIENCES</span>
-                <span className="text-[#00df8f] text-5xl sm:text-6xl lg:text-7xl">.</span>
-              </div>
-            </div>
-          </motion.div>
+          <motion.h1
+            variants={itemVariants}
+            className="text-5xl sm:text-6xl lg:text-7xl font-bold font-display leading-[0.9] tracking-tighter space-y-2"
+          >
+            <span className="block text-white">DIGITAL</span>
+            <span className="flex items-baseline gap-2">
+              <span className="text-stroke">EXPERIENCES</span>
+              <span aria-hidden="true" className="text-[#00df8f] text-5xl sm:text-6xl lg:text-7xl">.</span>
+            </span>
+          </motion.h1>
 
           {/* Body Text */}
           <motion.p variants={itemVariants} className="text-lg text-[#9ca3af] leading-relaxed max-w-md">
