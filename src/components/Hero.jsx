@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { ArrowUpRight, Mail } from 'lucide-react'
+import { asset } from '../lib/asset'
 
 export default function Hero({ scrollY }) {
   const containerVariants = {
@@ -111,7 +112,7 @@ export default function Hero({ scrollY }) {
               {/* Portrait Image */}
               <div className="h-60 bg-gray-800 flex items-center justify-center overflow-hidden">
                 <img
-                  src="/images/portrait.jpg"
+                  src={asset('images/portrait.jpg')}
                   alt="Go Youn Jung Portrait"
                   className="w-full h-full object-cover object-top"
                 />

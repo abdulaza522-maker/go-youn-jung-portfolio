@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
+import { asset } from '../lib/asset'
 
 const projects = [
   {
@@ -9,7 +10,7 @@ const projects = [
     title: 'Fashion E-Commerce Platform',
     description: 'A premium shopping experience with immersive product galleries, seamless checkout flows, and personalized recommendations.',
     tags: ['UI/UX', 'React', 'E-Commerce'],
-    image: '/images/shot-1.jpg',
+    image: 'images/shot-1.jpg',
   },
   {
     id: 2,
@@ -17,7 +18,7 @@ const projects = [
     title: 'Luxury Watch Boutique',
     description: 'Complete brand redesign featuring elegant typography, refined color palettes, and sophisticated motion design.',
     tags: ['Branding', 'Motion', 'Web'],
-    image: '/images/shot-2.jpg',
+    image: 'images/shot-2.jpg',
   },
   {
     id: 3,
@@ -25,7 +26,7 @@ const projects = [
     title: 'Fitness Tracking Dashboard',
     description: 'Clean, intuitive interface with real-time analytics, gamification elements, and social features for motivation.',
     tags: ['UI/UX', 'Mobile', 'Data Viz'],
-    image: '/images/shot-3.jpg',
+    image: 'images/shot-3.jpg',
   },
   {
     id: 4,
@@ -33,7 +34,7 @@ const projects = [
     title: 'Creative Agency Showcase',
     description: 'Bold, cinematic landing experience with parallax scrolling, custom transitions, and dynamic content loading.',
     tags: ['Web Design', 'Motion', 'Webflow'],
-    image: '/images/shot-4.jpg',
+    image: 'images/shot-4.jpg',
   },
 ]
 
@@ -113,7 +114,7 @@ export default function RecentWorks() {
                     whileHover={adjustedDiff === 0 ? { scale: 1.02 } : {}}
                   >
                     <img
-                      src={project.image}
+                      src={asset(project.image)}
                       alt={project.title}
                       className="w-full h-full object-cover"
                     />
